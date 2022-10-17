@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/g/filesaver.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="allcontainer">
+        <div class="inputform">
+            <form >
+                <p>ID Card Generator</p>
+                <input type="text" placeholder="Full Name" id="FNum">
+                <input type="text" placeholder="Position" id="dType">
+                <input type="text" placeholder="ID Number" id="idNum">
+                <input type="text" placeholder="Phone Number" id="nmcNum">
+                <input type="date" placeholder="DOB" id="DOB">
+                <input type="text" placeholder="Nationality" id="nationality">
+                <input type="text" placeholder="Website" id="Website">
+                <h2>Your Photo</h2>
+                <input type="file" placeholder="photo" id="photo">
+                <h2>Company logo</h2>
+                <input type="file" placeholder="photo" id="logo">
+                <h2>Choose 3 colors</h2>
+                <div class="colors">
+                    <input type="color" id="color1" value="#0c47f5">
+                    <input type="color" id="color2" value="#ff4d00">
+                    <input type="color" id="color3" value="#5982ff">
+                </div>
+                <button onclick="myFunction()" type="button">Create ID Card</button> <!--Type button prevents from refressing-->
+            </form>
+        </div>
+        <div class="idcard" id="idcard">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" class="logo" id="Clogo">
+            </div>
+            <div class="profilepic">
+                <div class="blueborder" id="blueborder">
+                    <img src="images/DVPHOTO2.png"  id="ProfilePic">
+                </div>
+                
+            </div>
+            <div class="naame" id="naame">
+                <h1 id="FName">Santosh Kunwar</h1>
+                <h2 id="DType">Web Designer</h2>
+            </div>
+            <div class="details">
+                <div class="title">
+                    <h2>ID Number</h2>
+                    <h2>Phone Number</h2>
+                    <h2>DOB</h2>
+                    <h2>Citizenship</h2>
+                    <h2>Valid Till</h2>
+                </div>
+                <div class="values">
+                    <h2 id="IdNum">ID Number</h2>
+                    <h2 id="NMCNum">Phone Number</h2>
+                    <h2 id="dob">DOB</h2>
+                    <h2 id="Citizenship">Citizenship</h2>
+                    <h2 >05-12-2022</h2>
+                </div>
+            </div>
+            <footer id="footer">
+                <div class="website">
+                    <img src="Images/globe.png" alt="" class="icong" id="globe">
+                    <h2 id="websitee">www.website.com</h2>
+                </div>
+                <div class="website">
+                    <img src="Images/call.png" alt="" class="icon">
+                    <h2 id="phNum">989999995</h2>
+                </div>
+            </footer>
+            <div class="blue" id="blue">
+
+            </div>
+            <div class="yellow" id="yellow">
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="downloadcl">
+        <button class="download" id="Download" onclick="takepic()">Download</button> 
+    </div>
+</body>
+</html>
