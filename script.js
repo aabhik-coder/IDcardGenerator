@@ -30,7 +30,7 @@ function myFunction(){
     // changing color
     // DarkBlue
     document.querySelector("#naame").style.backgroundColor=color1.value
-    document.querySelector("#footer").style.backgroundColor=color1.value
+    document.querySelector("#footer").style.borderColor=color1.value
     // orange
     document.querySelector("#blue").style.backgroundColor=color2.value
     document.querySelector("#blueborder").style.backgroundColor=color2.value
